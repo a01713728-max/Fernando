@@ -135,7 +135,8 @@
             </header>
             <div class="education-timeline">
                 <article class="card-education">
-                    <div class="education-logo-wrapper">
+                    <div class="education-logo-wrapper contenedor">
+                    
                         <img src="./assets/images/education/uaeh_logo_color.png" alt="Logo Universidad Autónoma del Estado de Hidalgo" class="education-logo" loading="lazy">
                     </div>
                     <div class="education-details">
@@ -151,42 +152,117 @@
         </section>
 
         <section id="tecnologias" class="section-technologies container" aria-labelledby="title-technologies">
-            <header class="section-header">
-                <h2 id="title-technologies" class="section-title" data-i18n="technologies.title">Software y Tecnologías</h2>
-            </header>
-            
-            <div class="technologies-grid">
-                <div class="tech-category">
-                    <h3 class="tech-category-title" data-i18n="tech.cat.control">Control y Simulación</h3>
-                    <ul class="tech-list">
-                        <li><img src="./assets/icons/matlab.png" alt="MATLAB" class="tech-icon" loading="lazy" width="240" height="240"> <span>MATLAB / Simulink</span></li>
-                        <li><img src="./assets/icons/fluidsim.png" alt="FluidSIM" class="tech-icon" loading="lazy" width="240" height="240"> <span>FluidSIM</span></li>
-                        <li><img src="./assets/icons/multisim.png" alt="Multisim" class="tech-icon" loading="lazy" width="240" height="240"> <span>Multisim</span></li>
-                        <li><img src="./assets/icons/labview.png" alt="LabVIEW" class="tech-icon" loading="lazy" width="240" height="240"> <span>LabVIEW</span></li>
-                    </ul>
-                </div>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title" data-i18n="tech.cat.automation">Automatización e Integración</h3>
-                    <ul class="tech-list">
-                        <li><img src="./assets/icons/gxworks2.png" alt="GX Works2" class="tech-icon" loading="lazy" width="240" height="240" > <span>GX Works2 (Mitsubishi)</span></li>
-                        <li><img src="./assets/icons/zeliosoft.png" alt="Zelio Soft" class="tech-icon" loading="lazy" width="240" height="240"> <span>Zelio Soft (Schneider)</span></li>
-                        <li><img src="./assets/icons/robodk.png" alt="RoboDK" class="tech-icon" loading="lazy" width="240" height="240"> <span>RoboDK</span></li>
-                        <li><img src="./assets/icons/proteus.png" alt="Proteus" class="tech-icon" loading="lazy" width="240" height="240"> <span>Proteus Design Suite</span></li>
-                    </ul>
-                </div>
+    <header class="section-header">
+        <h2 id="title-technologies" class="section-title" data-i18n="technologies.title">
+            Software y Tecnologías
+        </h2>
+    </header>
 
-                <div class="tech-category">
-                    <h3 class="tech-category-title" data-i18n="tech.cat.dev">Desarrollo y Código</h3>
-                    <ul class="tech-list">
-                        <li><img src="./assets/icons/cplusplus.png" alt="C++" class="tech-icon" loading="lazy" width="240" height="240"> <span>C / C++</span></li>
-                        <li><img src="./assets/icons/python.png" alt="Python" class="tech-icon" loading="lazy" width="240" height="240"> <span>Python</span></li>
-                        <li><img src="./assets/icons/arduino.png" alt="Arduino IDE" class="tech-icon" loading="lazy" width="240" height="240"> <span>Arduino IDE</span></li>
-                        <li><img src="./assets/icons/latex.png" alt="LaTeX" class="tech-icon" loading="lazy" width="240" height="240"> <span>LaTeX</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <div class="technologies-grid">
+
+        <!-- CONTROL -->
+        <article class="tech-category">
+            <h3 class="tech-category-title" data-i18n="tech.cat.control">
+                Control y Simulación
+            </h3>
+
+            <ul class="tech-list">
+
+                <li class="tech-card">
+                    <img src="./assets/icons/matlab.png" alt="MATLAB" class="tech-icon" loading="lazy">
+                    <span>MATLAB / Simulink</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/fluidsim.png" alt="FluidSIM" class="tech-icon" loading="lazy">
+                    <span>FluidSIM</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/multisim.png" alt="Multisim" class="tech-icon" loading="lazy">
+                    <span>Multisim</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/labview.png" alt="LabVIEW" class="tech-icon" loading="lazy">
+                    <span>LabVIEW</span>
+                </li>
+
+            </ul>
+        </article>
+
+        <!-- AUTOMATIZACIÓN -->
+
+        <article class="tech-category">
+
+            <h3 class="tech-category-title" data-i18n="tech.cat.automation">
+                Automatización e Integración
+            </h3>
+
+            <ul class="tech-list">
+
+                <li class="tech-card">
+                    <img src="./assets/icons/gxworks2.png" alt="GX Works2" class="tech-icon" loading="lazy">
+                    <span>GX Works2</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/zeliosoft.png" alt="Zelio Soft" class="tech-icon" loading="lazy">
+                    <span>Zelio Soft</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/robodk.png" alt="RoboDK" class="tech-icon" loading="lazy">
+                    <span>RoboDK</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/proteus.png" alt="Proteus" class="tech-icon" loading="lazy">
+                    <span>Proteus</span>
+                </li>
+
+            </ul>
+
+        </article>
+
+        <!-- DESARROLLO -->
+
+        <article class="tech-category">
+
+            <h3 class="tech-category-title" data-i18n="tech.cat.dev">
+                Desarrollo y Código
+            </h3>
+
+            <ul class="tech-list">
+
+                <li class="tech-card">
+                    <img src="./assets/icons/cplusplus.png" alt="C++" class="tech-icon" loading="lazy">
+                    <span>C / C++</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/python.png" alt="Python" class="tech-icon" loading="lazy">
+                    <span>Python</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/arduino.png" alt="Arduino IDE" class="tech-icon" loading="lazy">
+                    <span>Arduino IDE</span>
+                </li>
+
+                <li class="tech-card">
+                    <img src="./assets/icons/latex.png" alt="LaTeX" class="tech-icon" loading="lazy">
+                    <span>LaTeX</span>
+                </li>
+
+            </ul>
+
+        </article>
+
+    </div>
+
+</section>
 
         <section id="proyectos" class="section-projects container" aria-labelledby="title-projects">
             <header class="section-header">

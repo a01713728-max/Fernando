@@ -203,9 +203,13 @@ button, .btn-primary, .btn-secondary, .btn-ghost {
 
 /* Tech & Skills Lists */
 .tech-list, .skills-list {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-3);
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.25rem;
+
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
 .card-tech, .card-skill {
@@ -270,4 +274,63 @@ button, .btn-primary, .btn-secondary, .btn-ghost {
 
 .education-details {
     flex: 1;
+}
+.tech-category{
+    background: var(--color-bg-base);
+    border:1px solid var(--color-border);
+    border-radius:20px;
+    padding:2rem;
+}
+
+.tech-category-title{
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:1.25rem;
+    font-weight:700;
+}
+.tech-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#fff;
+
+    border:1px solid var(--color-border);
+    border-radius:16px;
+
+    padding:1.5rem;
+
+    min-height:150px;
+
+    transition:.25s ease;
+}
+
+.tech-icon{
+    width:60px;
+    height:60px;
+
+    object-fit:contain;
+
+    margin-bottom:1rem;
+}
+
+.tech-card span{
+
+    text-align:center;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+    font-size:.95rem;
+}
+
+.technologies-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
 }

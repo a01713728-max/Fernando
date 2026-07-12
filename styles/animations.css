@@ -100,3 +100,11 @@ svg {
     transition: background-color var(--duration-card) var(--ease-out-quint),
                 border-color var(--duration-card) var(--ease-out-quint);
 }
+
+.tech-card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border-color:var(--color-primary);
+}
