@@ -6,16 +6,14 @@
 
 window.AppCertificates = (() => {
     
-    const handleViewCertificate = (e) => {
-        const btn = e.currentTarget;
-        const certId = btn.getAttribute('data-cert-id');
-        
-        // RUTA CORREGIDA: Apunta a tu estructura física real
-        const pdfUrl = `./assets/certificates/certificate-${certId}.pdf`;
-        
-        // Abrir PDF en pestaña nueva garantizando seguridad
-        window.open(pdfUrl, '_blank', 'noopener,noreferrer');
-    };
+   const handleViewCertificate = (e) => {
+    const btn = e.currentTarget;
+    const certId = btn.getAttribute('data-cert-id');
+
+    const pdfUrl = `./assets/certificates/certificate-${certId}.pdf`;
+
+    window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+};
 
     const handleCopyEmail = async (e) => {
         const btn = e.currentTarget;
