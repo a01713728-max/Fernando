@@ -11,7 +11,7 @@ window.AppCertificates = (() => {
         const certId = btn.getAttribute('data-cert-id');
         
         // RUTA CORREGIDA: Apunta a tu estructura física real
-        const pdfUrl = `/assets/certificates/certificate-${certId}.pdf`;
+        const pdfUrl = `./assets/certificates/certificate-${certId}.pdf`;
         
         // Abrir PDF en pestaña nueva garantizando seguridad
         window.open(pdfUrl, '_blank', 'noopener,noreferrer');
