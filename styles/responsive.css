@@ -1,0 +1,91 @@
+/* ==========================================
+   RESPONSIVE CSS (MEDIA QUERIES)
+   ========================================== */
+
+/* --- TABLET Y LAPTOPS PEQUEÑAS (Max 1024px) --- */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .technologies-grid, .skills-layout {
+        gap: var(--spacing-4);
+    }
+}
+
+/* --- TABLET VERTICAL / MOBILE LANDSCAPE (Max 768px) --- */
+@media (max-width: 768px) {
+    section {
+        padding-block: var(--spacing-16);
+    }
+
+    /* Navbar & Menu */
+    .mobile-menu-toggle {
+        display: block; /* Muestra hamburguesa */
+    }
+
+    .nav-list {
+        display: none; /* Oculto inicialmente por HTML, JS maneja clase visible */
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-bg-base);
+        flex-direction: column;
+        padding: var(--spacing-4) var(--spacing-6);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .nav-list.is-open {
+        display: flex;
+    }
+
+    .navbar-actions .btn-primary {
+        display: none; /* Simplifica header móvil, CTA se mantiene en Hero */
+    }
+
+    /* Grids a 1 Columna */
+    .projects-grid, 
+    .certifications-grid, 
+    .technologies-grid, 
+    .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajuste de Hero */
+    .hero-content {
+        padding-top: var(--spacing-8);
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%; /* Botones full-width en móvil para target accesible */
+    }
+}
+
+/* --- MOBILE PORTRAIT (Max 480px) --- */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .card-project, .card-certificate {
+        border-radius: var(--radius-md); /* Suaviza bordes en pantallas chicas */
+    }
+}

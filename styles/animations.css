@@ -1,0 +1,102 @@
+/* ==========================================
+   ANIMATIONS CSS (MOTION DESIGN SPEC)
+   ========================================== */
+
+/* --- ENFOQUE ACCESIBLE (FOCUS-VISIBLE) --- */
+*:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+}
+
+/* --- HOVER STATES & MICROINTERACTIONS --- */
+
+/* Botones */
+.btn-primary {
+    transition: background-color var(--duration-button) var(--ease-out-quad),
+                transform var(--duration-snappy) var(--ease-out-quad);
+}
+.btn-primary:hover { background-color: var(--color-primary-hover); }
+.btn-primary:active { transform: scale(0.98); }
+
+.btn-secondary {
+    transition: background-color var(--duration-button) var(--ease-out-quad),
+                transform var(--duration-snappy) var(--ease-out-quad);
+}
+.btn-secondary:hover { background-color: var(--color-bg-alt); }
+.btn-secondary:active { transform: scale(0.98); }
+
+.btn-ghost {
+    transition: color var(--duration-instant) var(--ease-out-quad),
+                transform var(--duration-snappy) var(--ease-out-quad);
+}
+.btn-ghost:hover { color: var(--color-primary); }
+.btn-ghost:active { transform: scale(0.98); }
+
+/* Enlaces de Navegación */
+.nav-list a {
+    transition: color var(--duration-instant) var(--ease-out-quad);
+}
+.nav-list a:hover, .nav-list a.is-active {
+    color: var(--color-text-main);
+}
+
+/* Tarjetas Proyectos */
+.card-project {
+    transition: border-color var(--duration-card) var(--ease-out-quint),
+                box-shadow var(--duration-card) var(--ease-out-quint);
+}
+.card-project:hover {
+    border-color: var(--color-border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+/* Escala interna de imagen de proyecto (Prohibido animar height/width) */
+.project-image {
+    transition: transform var(--duration-card) var(--ease-out-quint);
+    transform-origin: center;
+}
+.card-project:hover .project-image {
+    transform: scale(1.02) translate(-2px, -2px);
+}
+
+/* Tarjetas Certificados */
+.card-certificate {
+    transition: border-color var(--duration-card) var(--ease-out-quint),
+                box-shadow var(--duration-card) var(--ease-out-quint),
+                transform var(--duration-card) var(--ease-out-quint);
+}
+.card-certificate:hover {
+    border-color: var(--color-text-light);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
+/* Íconos SVG genéricos (si los hay dentro de botones) */
+svg {
+    transition: transform var(--duration-snappy) var(--ease-out-quad);
+}
+.btn-ghost:hover svg {
+    transform: translateX(2px); /* Vector de dirección */
+}
+
+/* --- SCROLL REVEAL & ENTRANCE ANIMATIONS --- */
+
+/* Clase base inyectada por JS (Intersection Observer) */
+.reveal-element {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity var(--duration-reveal) var(--ease-out-quint),
+                transform var(--duration-reveal) var(--ease-out-quint);
+    will-change: opacity, transform;
+}
+
+.reveal-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Navbar Transitions */
+.site-header {
+    transition: background-color var(--duration-card) var(--ease-out-quint),
+                border-color var(--duration-card) var(--ease-out-quint);
+}
